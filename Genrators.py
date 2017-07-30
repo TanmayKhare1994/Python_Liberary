@@ -23,6 +23,7 @@ def Countdown():
 for i in Countdown():
     print(i)
 
+#  infinite loop:  
 # def infi():
 #     while True:
 #         yield 7
