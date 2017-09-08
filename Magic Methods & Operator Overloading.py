@@ -21,3 +21,5 @@ f2= Vector2D(4,5);
 result = f1+f2;
 print result.x;
 print result.y;
+
+print   (":".join(["spam","12","jk","adad","23.34"]))
