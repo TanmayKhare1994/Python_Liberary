@@ -32,4 +32,4 @@ if re.search(pattern3, "AbCdEfG123"):           #mixer
 if re.search(pattern3, "THISISALLSHOUTING"): #all cpas not allowed
     print("pattern 3 matched");
 else:
-    print("pattern not  3 matched")
+    print("pattern not  3 matched");
