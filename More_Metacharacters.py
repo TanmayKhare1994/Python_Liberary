@@ -34,3 +34,27 @@ if re.search(pattern5,"42"):
 
 if re.search(pattern5,"424242"):
     print("42's")
+
+# 3) The metacharacter ? means "zero or one repetitions".
+
+pattern6 = r"ice-?cream"
+
+if re.search(pattern6,"icecream"):
+    print("Match1 => ?")
+
+if re.search(pattern6,"ice-cream"):
+    print("Match2 => ?")
+
+if re.match(pattern6, "sausages"):
+   print("Match3 => ?")
+
+if re.match(pattern6, "ice--ice"):
+   print("Match4 => ?")
+
+
+# 4) { } metacharter
+
+pattern7 = r"9{1,3}$"
+
+if re.search(pattern7,"99"):
+    print("match 7 pattern")
