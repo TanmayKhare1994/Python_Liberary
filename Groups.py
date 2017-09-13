@@ -42,13 +42,48 @@ if match1:
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 # 1st group is named group and 2nd group is non capturing group
-pattern = r"(?P<first>abc)(?:def)(ghi)"
+pattern5 = r"(?P<first>abc)(?:def)(ghi)"
 
-match = re.match(pattern, "abcdefghi")
+match = re.match(pattern5, "abcdefghi")
 if match:
    print(match.group("first"))
    print(match.groups())
 
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
+pattern6 = r"(a)(b(?:c)(d)(?:e))"
+match = re.match(pattern6, "abcde")
+if match:
+       print(len(match.groups()))
 
+
+print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+
+pattern7 = r"gr(a|e)y"   # | means or a or e
+
+match = re.match(pattern7, "gray")
+if match:
+   print ("Match 1")
+
+match = re.match(pattern7, "grey")
+if match:
+   print ("Match 2")
+
+match = re.match(pattern7, "griy")
+if match:
+    print ("Match 3")
+
+
+print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+
+pattern8 = r"(.+) \1"
+
+
+if re.match(pattern8,"kumar kumar sahu"):  # unlimited times the same word but 2 times back to back
+    print("true")
+
+match11 = re.match(pattern8, "?! ?!")
+if match11:
+   print("true 2")
+
+print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
