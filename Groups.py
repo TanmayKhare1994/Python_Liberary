@@ -94,4 +94,20 @@ if re.match(pattern9,"Akhilesh Akhilesh"):
 
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
+pattern10 = r"(\D+\d)"
 
+match12 = re.match(pattern10, "Hi 999!")
+
+if match12:
+   print("Match 1")
+
+match13 = re.match(pattern, "1, 23, 456!")
+if match13:
+   print("Match 2")
+
+match14 = re.match(pattern, " ! $?")
+if match14:
+    print("Match 3")
+
+
+print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
