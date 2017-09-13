@@ -55,6 +55,7 @@ if re.match(pattern6, "ice--ice"):
 # 4) { } metacharter
 
 pattern7 = r"9{1,3}$"
+pattern8 = r"9{0,1}$"  #same as *
 
-if re.search(pattern7,"99"):
+if re.search(pattern7,"999"):
     print("match 7 pattern")
