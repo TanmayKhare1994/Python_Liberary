@@ -110,4 +110,20 @@ if match14:
     print("Match 3")
 
 
+# (\D+\d) matches one or more non-digits followed by a digit.
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+
+
+pattern20 = r"\b(cat)\b"
+
+match15 = re.search(pattern20, "The cat sat!")
+if match15:
+   print ("Match 1")
+
+match15 = re.search(pattern20, "We s>cat<tered?")
+if match15:
+   print ("Match 2")
+
+match15 = re.search(pattern20, "We scattered.")
+if match15:
+   print ("Match 3")
