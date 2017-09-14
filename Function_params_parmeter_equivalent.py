@@ -12,3 +12,11 @@ def function(x, y, food="spam"):
 
 function(1, 2)
 function(3, 4, "egg")
+
+
+print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+
+def function1(x,y,food="paneer",**kwargs):
+    print(kwargs)
+
+print(function1(1,2,k=1,j=2,l=3))
