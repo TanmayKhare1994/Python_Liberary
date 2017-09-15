@@ -19,7 +19,7 @@ for i in range(10):
 else:
    print("7")
 
-# with try execute block
+# with try except block
 
 try:
    print(1)
